@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  
+  <title>BU ERRANDS.COM</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .bgdesktop{ background-image: url("./Assets/Background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+               /* background-position: center ;*/
+                height: 100%;}
+    body,html{height: 100%;}            
+
+
+    h1 ,p{color: white;}
+
+    form{
+      padding: 20px;
+      height: 500px;
+    }
+
+
+    .first{background-color: blue;
+              height: 500px;
+              width: 400px;}                   
+
+   /* .first , .second{border: 1px solid black;}*/
+  </style>
+</head>
+<body>
+  
+  <div class="container-fluid bgdesktop align-items-center justify-content-center d-flex" style="background-color: black; ">
+    <div class="row " >
+       <div class="col-sm-12 col-md-6 first d-flex justify-content-center" style="border: solid 1px; border-radius: 20px 0px 0px 20px;">
+         <div>
+                        <div class="mt-0" style="text-align: center;" >
+                       <h1>BU ERRANDS</h1>
+                <p>Too Lazy? Contact BU ERRANDS</p> 
+                        </div>
+             <img src="./images/IMG-20210325-WA0005.jpg" style="height: 350px; width: 350px;" style="border: 2px solid black;" alt="">
+     
+        </div>
+       </div>
+      <div class="col second bg-light " style="border:  1px; border-radius: 0px 20px 20px 0px";>
+          <form action="" method="" class=" needs-validation ml-3" novalidate >
+            <h2 class="pt-3">Login</h2>
+           <br>
+           <label for="Email">Email</label>
+           <input type="email" placeholder="john@example.com" class="form-control" style="height: 50px; width: 300px;"  id="validationCustom03" value="" required>
+           <div class="invalid-feedback text-right">
+            please input your E-mail
+           </div>
+           <br>
+           <label for="password">Password</label>
+           <input type="password" placeholder="At least 8 characters" class="form-control" style="height:50px; width: 300px;"  id="validationCustom04" value="" required>
+           <div class="invalid-feedback text-right">
+            please input your password
+           </div>
+           <br>
+             <p style="color: black;">
+              By creating an account, you <br> agree to the <a href="#" class="text-primary">Terms & <br> conditions</a> 
+             </p>
+             <button class="btn btn-primary btn-block" style="height: 40px;"> Create an account </button> 
+          </form>              
+     </div>
+    </div>  
+  </div>
+  
+ 
+  
+  <footer>
+    <p class="attribution" style="color: black;">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src = "js/bootstrap.js"></script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
